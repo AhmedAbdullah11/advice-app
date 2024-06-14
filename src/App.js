@@ -11,7 +11,7 @@ function App() {
 
   function fetchAdvice() {
     axios
-      .get("http://api.adviceslip.com/advice")
+      .get("https://api.adviceslip.com/advice")
       .then((response) => {
         const { advice } = response.data.slip;
         setAdvice(advice);
